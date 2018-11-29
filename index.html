@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="instructions row">
+            <h1>How To Play</h1>
+            <p>Each crystal has it's own hidden value. Click a crystal to add its value to your score. Match your score
+                with the Number to Match to win!</p>
+        </div>
+
+        <div class="row">
+            <div class="numberToMatch col-md-6">
+                <h1>Number to Match:
+                    <span id="random-number"></span>
+                </h1>
+            </div>
+            <div class="playerScore col-md-6">
+                <h1>Your Score:
+                    <span id="player-score">
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="wins col-md-6">
+                <h2>Wins:
+                    <span id="numWins"></span>
+                </h2>
+            </div>
+            <div class="losses col-md-6">
+                <h2>Losses:
+                    <span id="numLosses"></span>
+                </h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <input id="gray-crystal" type="image" src="assets/images/gray-crystal.png">
+                <input id="yellow-crystal" type="image" src="assets/images/yellow-crystal.png">
+            </div>
+            <div class="col-md-6">
+                <input id="pink-crystal" type="image" src="assets/images/pink-crystal.png">
+                <input id="green-crystal" type="image" src="assets/images/green-crystal.png">
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
